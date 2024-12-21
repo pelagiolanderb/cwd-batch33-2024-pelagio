@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/4f0871be38.js" crossorigin="anonymous"></script>
+    <!-- Font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Downloaded compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Navbar & Sidenav</title>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="deep-orange darken-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" target="_blank" class="brand-logo right">
+                        <i class="fa-brands fa-font-awesome"></i>
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                        <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                        <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                        <li><a href="#!" class="dropdown-trigger" data-target="dropdown1"><i
+                                    class="material-icons">arrow_drop_down</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+            <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+            <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+        </ul>
+    </div>
+    <h1 class="center red-text text-lighten-2">Navbar</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts
+            of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or
+            right.</p>
+
+        <h3 class="red-text text-lighten-2">Right Aligned Text</h3>
+
+        <p>To right align your navbar links, just add a right class to your <b class="red-text">
+                <<span>ul</span>>
+            </b> that contains them.</p>
+
+        <nav class="light-blue lighten-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" target="_blank" class="brand-logo">
+                        <i class="fa-brands fa-font-awesome"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                        <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                        <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+
+        <h3 class="red-text text-lighten-2">Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your <b class="red-text">
+                <<span>ul</span>>
+            </b> that contains them.</p>
+
+        <nav class="light-blue lighten-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" target="_blank" class="brand-logo right">
+                        <i class="fa-brands fa-font-awesome"></i>
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                        <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                        <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+        <h3 class="red-text text-lighten-2">Centering the logo</h3>
+        <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add
+            the center class to your &lt;a class="brand-logo"&gt;. You will have to make sure yourself that links do not
+            overlap if you use this.</p>
+
+        <nav class="light-blue lighten-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" target="_blank" class="brand-logo center">
+                        <i class="fa-brands fa-font-awesome"></i>
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                        <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                        <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+        <h3 class="red-text text-lighten-2">Active Items</h3>
+        <p>Add active class to your li tags to denote the current page.</p>
+
+        <nav class="light-blue lighten-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" target="_blank" class="brand-logo center">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                        <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                        <li class="active"><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+        <h3 class="red-text text-lighten-2">Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow
+            your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+
+        <nav class="purple nav-extended">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" target="_blank" class="brand-logo center">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li class="active"><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                        <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                        <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                    </ul>
+                </div>
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#test1">Test 1</a></li>
+                        <li class="tab"><a href="#test2">Test 2</a></li>
+                        <li class="tab"><a href="#test3">Test 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sidenav -->
+        <div class="sidenav" id="mobile-demo">
+            <div class="brand-logo center">
+                <a href="https://fontawesome.com/" target="_blank">
+                    <i class="fa-brands fa-font-awesome"></i>
+                </a>
+            </div>
+            <ul>
+                <li class="active"><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+            </ul>
+        </div>
+
+        <!-- Tabs structure -->
+        <div class="row">
+            <div class="col s12" id="test1">
+                <div class="card">
+                    <div class="card-image"><img src="./images/purple-img1.jpg" alt="" class="responsive-img"></div>
+                </div>
+            </div>
+            <div class="col s12" id="test2">
+                <div class="card">
+                    <div class="card-image"><img src="./images/purple-img2.jpg" alt="" class="responsive-img"></div>
+                </div>
+            </div>
+            <div class="col s12" id="test3">
+                <div class="card">
+                    <div class="card-image"><img src="./images/purple-img3.jpg" alt="" class="responsive-img"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 1000px;"></div>
+
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // tabs Init
+            $('.tabs').tabs();
+            // Sidenav Init
+            $('.sidenav').sidenav({
+                edge: 'right',
+                inDuration: 1000,
+                outDuration: 1000
+            });
+            // Dropdown Init
+            $('.dropdown-trigger').dropdown();
+        });
+    </script>
+</body>
+
+</html>

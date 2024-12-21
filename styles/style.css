@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+}
+
+.carbon-poweredby {
+    font-size: 12px;
+}
+
+.carbon-text {
+    font-size: 14px;
+}
+
+.adobe-stock {
+    position: sticky;
+    top: 0;
+}
+
+#creating-layouts .material-icons {
+    font-size: 7rem;
+    color: rgb(238, 110, 115)
+}

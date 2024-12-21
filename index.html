@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection">
+    <title>Creative Web Design</title>
+</head>
+
+<body class="">
+    <h1 class="red-text text-lighten-2 center">Typography</h1>
+    <div class="divider"></div> 
+
+    <div class="container">
+        <h3 class="red-text text-lighten-2">Headers</h3>
+        <p>We provide some basic styling on header tags. In the example, you can see the 6 header tags' different sizes.</p>
+
+        <div class="card-panel">
+            <h1>Heading h1</h1>
+            <h2>Heading h2</h2>
+            <h3>Heading h3</h3>
+            <h4>Heading h4</h4>
+            <h5>Heading h5</h5>
+            <h6>Heading h6</h6>
+        </div>
+
+        <h3 class="red-text text-lighten-2">Blockquotes</h3>
+        <p>Blockquotes are mainly use to give emphasis to a quote or cictation. You can also use these for some extra text hierarchy and emphasis.</p>
+
+        <blockquote>This is an exaxmple quatat</blockquote>
+    </div>
+
+    <br><br><br>
+    <h1 class="center orange-text">Media CSS</h1>
+    <div class="divider"></div>
+
+    <br><br>
+    <div class="container">
+        <h3 class="orange-text">Images</h3>
+        <p>Images can be styled in different ways using Meterialize</p>
+        <p class="flow-text">Responsive Images</p>
+        <p>To make images resize responsively to page width, you can add the class responsive-img to your image tag. It will now have a max-width: 100% and height: auto.
+        </p>
+
+        <p class="flow-text">Circular Images</p>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card-panel black-text z-depth-5">
+                    <div class="row valign-wrapper">
+                        <div class="col s4 m4 l6">
+                            <img src="images/img1.jpg" alt="" class="responsive-img circle">
+                        </div>
+                        <div class="col s8 m8 l6">
+                            <span>
+                                This is a square image. Add the "circle" class to it to make it appear circular.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Videos -->
+        <h3>Videos</h3>
+        <p>We provide a container for Embedded Videos that resizes them responsively.</p>
+        <br>
+        <h4 class="flow-text">Responsive Embeds</h4>
+        <p>To make your embeds responsive, merely wrap them with a containing div which has the class video-container</p>
+        <div class="video-container">
+            <!-- Put here the iframe e.g. embedded youtube -->
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h3 class="orange-text">Material Box</h3>
+                <p>
+                    Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged, Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image agaian, scroll away, or press the ESC key.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="images/img1.jpg" alt="Image not found" class="responsive-img materialboxed" data-capture="">
+            </div>
+            <div class="col s12 m6">
+                <img src="images/img1.jpg" alt="Image not found" class="responsive-img materialboxed">
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        })
+    </script>
+</body>
+
+</html>

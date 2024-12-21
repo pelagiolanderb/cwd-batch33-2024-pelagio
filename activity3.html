@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Media) Material Box, Slider with initialization and Option</title>
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection">
+</head>
+
+<body>
+    <h1 class="center orange-text">Media CSS</h1>
+    <div class="divider"></div>
+
+    <br><br>
+    <div class="container">
+        <h3 class="orange-text">Images</h3>
+        <p>Images can be styled in different ways using Meterialize</p>
+        <p class="flow-text">Responsive Images</p>
+        <p>To make images resize responsively to page width, you can add the class responsive-img to your image tag. It
+            will now have a max-width: 100% and height: auto.
+        </p>
+
+        <p class="flow-text">Circular Images</p>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card-panel black-text z-depth-5">
+                    <div class="row valign-wrapper">
+                        <div class="col s4 m4 l6">
+                            <img src="images/img1.jpg" alt="" class="responsive-img circle">
+                        </div>
+                        <div class="col s8 m8 l6">
+                            <span>
+                                This is a square image. Add the "circle" class to it to make it appear circular.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Videos -->
+        <h3 class="red-text text-lighten-2">Videos</h3>
+        <p>We provide a container for Embedded Videos that resizes them responsively.</p>
+        <br>
+        <h4 class="flow-text">Responsive Embeds</h4>
+        <p>To make your embeds responsive, merely wrap them with a containing div which has the class video-container
+        </p>
+        <br><br>
+        <div class="video-container">
+            <!-- Put here the iframe e.g. embedded youtube -->
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/t0Q2otsqC4I" title="Tom &amp; Jerry | Tom &amp; Jerry in Full Screen | Classic Cartoon Compilation | WB Kids" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <br>
+
+    <h1 class="center red-text text-lighten-2">Media</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <br>
+        <p>Media components inlude things that have to do with large media objects like Images, Videos, Audio, etc.</p>
+        <h3 class="red-text text-lighten-2">Material Box</h3>
+        <p>Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged, Meterial box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the usser cam either click on the image again, scroll away, or press the ESC key.
+        </p>
+        <img src="images/img1.jpg" alt="" class="materialboxed responsive-img" data-caption="A siblings picture in semetery.">
+
+        <br>
+
+        <h3 class="red-text text-lighten-2">Slider</h3>
+        <p>Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider.</p>
+
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="./images/purple-img1.jpg" alt="Purple flowers in tilt shift lengs.">
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Purple flowers in tilt shift lengs.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/purple-img2.jpg" alt="A close up of a purple flower.">
+                    <div class="caption left-align">
+                        <h3>Left Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">A close up of a purple flower.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/purple-img3.jpg" alt="Purple flowers on a plant.">
+                    <div class="caption right-align">
+                        <h3>Right Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Purple flowers on a plant.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/purple-img4.jpg" alt="A close up of a bunch of purple flowers.">
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">A close up of a bunch of purple flowers.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/purple-img5.jpg" alt="A group of purple flowers.">
+                    <div class="caption right-align">
+                        <h3>Right Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">A group of purple flowers.</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div style="height: 1000px;"></div>
+
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.materialboxed').materialbox({
+                inDuration: 1000,
+                outDuration: 1000
+            });
+
+            $('.slider').slider({
+                height: 700,
+                duration: 2000,
+                interval: 1000
+            });
+        })
+    </script>
+</body>
+
+</html>
